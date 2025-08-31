@@ -221,6 +221,36 @@ h2::after {
     margin: 0.5rem 0;
 }
 
+/* Publications Section */
+.publications-section {
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.publications-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.publications-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-section li {
+    margin-bottom: 0.5rem;
+}
+
+.publications-section a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.publications-section a:hover {
+    text-decoration: underline;
+}
+
 /* Contact Section */
 .contact-section {
     text-align: center;
