@@ -104,6 +104,15 @@ body::before {
     margin-bottom: 2rem;
 }
 
+/* Profile Links - for aligning buttons horizontally */
+.profile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* Add some spacing between items */
+}
+
 .social-link {
     display: flex;
     align-items: center;
@@ -264,6 +273,10 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
     .nav-content {
         flex-direction: column;
         text-align: center;
