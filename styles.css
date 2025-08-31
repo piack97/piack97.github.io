@@ -119,6 +119,13 @@ body::before {
 .social-link img {
     width: 24px;
     height: 24px;
+    filter: invert(1);
+}
+
+.social-link img_long {
+    width: 48px;
+    height: 24px;
+    filter: invert(1);
 }
 
 .social-link:hover {
