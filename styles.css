@@ -3,9 +3,9 @@
     --secondary-color: #c17f59;
     --accent-color: #d4956b;
     --text-color: #e6e6e6;
-    --background-color: #121212;
-    --card-background: #1a1a1a;
-    --nav-background: rgba(18, 18, 18, 0.9);
+    --background-color: rgba(18, 18, 18, 0.85);
+    --card-background: rgba(26, 26, 26, 0.9);
+    --nav-background: rgba(18, 18, 18, 0.95);
 }
 
 body {
@@ -14,7 +14,23 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: #121212;
+    background-image: url('M31_v1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.85);
+    z-index: -1;
 }
 
 /* Navigation */
@@ -57,14 +73,28 @@ body {
 
 /* Hero Section */
 .hero {
-    background-color: var(--primary-color);
+    position: relative;
     color: var(--text-color);
     padding: 8rem 2rem 4rem;
     text-align: center;
-    background-image: linear-gradient(rgba(45, 24, 16, 0.9), rgba(18, 18, 18, 0.9));
+    background-image: url('M8_v1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(45, 24, 16, 0.9), rgba(18, 18, 18, 0.95));
 }
 
 .hero-content {
+    position: relative;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -85,6 +115,12 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+    background-color: var(--background-color);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    margin-top: -2rem;
+    position: relative;
+    z-index: 1;
 }
 
 section {
@@ -121,37 +157,6 @@ h2::after {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Gallery Section */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    background-color: var(--card-background);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.gallery-caption {
-    padding: 1rem;
-    background-color: rgba(45, 24, 16, 0.9);
-}
-
 /* Research and Projects Sections */
 .research-grid, .projects-grid {
     display: grid;
@@ -165,6 +170,7 @@ h2::after {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
 .research-card:hover, .project-card:hover {
@@ -188,6 +194,7 @@ h2::after {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     display: inline-block;
+    backdrop-filter: blur(5px);
 }
 
 .email-link {
@@ -220,9 +227,10 @@ h2::after {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: var(--primary-color);
+    background-color: var(--nav-background);
     color: var(--text-color);
     margin-top: 4rem;
+    backdrop-filter: blur(10px);
 }
 
 /* Responsive Design */
@@ -255,5 +263,6 @@ footer {
 
     main {
         padding: 1rem;
+        margin-top: -1rem;
     }
 }
