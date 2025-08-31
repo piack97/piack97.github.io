@@ -122,9 +122,16 @@ body::before {
     filter: invert(1);
 }
 
-.social-link img_long {
+.social-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.spie-logo {
     width: 48px;
     height: 24px;
+    filter: none;
 }
 
 .social-link:hover {
