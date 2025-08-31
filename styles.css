@@ -126,20 +126,23 @@ body::before {
 }
 
 .social-link img {
-    width: 24px;
     height: 24px;
+    width: auto;
+    object-fit: contain;
     filter: invert(1);
 }
 
 .social-icon {
-    width: 24px;
     height: 24px;
+    width: auto;
+    object-fit: contain;
     filter: invert(1);
 }
 
 .spie-logo {
-    width: 48px;
     height: 24px;
+    width: auto;
+    object-fit: contain;
     filter: none;
 }
 
