@@ -7,55 +7,122 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Dr. John (Jack) Piotrowski</h1>
-        <p>Matt Johns Instrumentation Fellow at Carnegie Observatories</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">JJP</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Dr. John (Jack) Piotrowski</h1>
+            <p class="title">Matt Johns Instrumentation Fellow at Carnegie Observatories</p>
+            <a href="JJP_CV_20250831.pdf" class="cv-link">Download CV</a>
+        </div>
     </header>
+
     <main>
-        <section id="about">
-            <img src="jack_SOAR.jpg" alt="Jack Piotrowski" class="profile-img">
-            <p>
-                I am an astronomical instrumentalist focused on building the next generation of spectrographs to enable science in the era of massive surveys.
-                My research focuses on the optical design, construction, and commissioning of novel multi-object spectrographs in the optical to near-infrared wavelength regime.
-            </p>
-            <p><a href="JJP_CV_20250831.pdf" class="cv-link">Download CV</a></p>
+        <section id="about" class="about-section">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="jack_SOAR.jpg" alt="Jack Piotrowski" class="profile-img">
+                </div>
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>
+                        I am an astronomical instrumentalist focused on building the next generation of spectrographs to enable science in the era of massive surveys.
+                        My research focuses on the optical design, construction, and commissioning of novel multi-object spectrographs in the optical to near-infrared wavelength regime.
+                    </p>
+                    <p>
+                        As the Matt Johns Instrumentation Fellow at Carnegie Observatories, I work on cutting-edge astronomical instrumentation projects that push the boundaries of our observational capabilities.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="research">
+        <section id="gallery" class="gallery-section">
+            <h2>Featured Astrophotography</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="M31_v1.jpg" alt="Andromeda Galaxy (M31)">
+                    <div class="gallery-caption">
+                        <h3>Andromeda Galaxy (M31)</h3>
+                        <p>Our nearest major galactic neighbor</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="M8_v1.jpg" alt="Lagoon Nebula (M8)">
+                    <div class="gallery-caption">
+                        <h3>Lagoon Nebula (M8)</h3>
+                        <p>A massive star-forming region</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research-section">
             <h2>Research Interests</h2>
-            <ul>
-                <li>Astronomical instrumentation</li>
-                <li>Multi-object spectrographs</li>
-                <li>Optical design and engineering</li>
-                <li>Survey science</li>
-            </ul>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Astronomical Instrumentation</h3>
+                    <p>Designing and building advanced instruments for ground-based telescopes</p>
+                </div>
+                <div class="research-card">
+                    <h3>Multi-object Spectrographs</h3>
+                    <p>Development of next-generation spectrographic instruments</p>
+                </div>
+                <div class="research-card">
+                    <h3>Optical Design</h3>
+                    <p>Creating innovative optical systems for astronomical observations</p>
+                </div>
+                <div class="research-card">
+                    <h3>Survey Science</h3>
+                    <p>Enabling large-scale astronomical surveys through instrumentation</p>
+                </div>
+            </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="projects-section">
             <h2>Current Projects</h2>
-            <ul>
-                <li>Deputy Instrument PI - The Via Project
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>The Via Project</h3>
+                    <p class="project-role">Deputy Instrument PI</p>
                     <p>Twin fiber-based multi-object spectrographs for studying the interstellar medium and dark matter around the Milky Way</p>
-                </li>
-                <li>Instrument Scientist - FALCON</li>
-                <li>Optical Designer - GMT commissioning camera</li>
-            </ul>
+                </div>
+                <div class="project-card">
+                    <h3>FALCON</h3>
+                    <p class="project-role">Instrument Scientist</p>
+                    <p>Leading the development and implementation of advanced spectroscopic capabilities</p>
+                </div>
+                <div class="project-card">
+                    <h3>GMT Commissioning Camera</h3>
+                    <p class="project-role">Optical Designer</p>
+                    <p>Designing optical systems for the Giant Magellan Telescope's commissioning phase</p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contact-section">
             <h2>Contact</h2>
-            <p>Carnegie Observatories</p>
-            <a href="mailto:jpiotrowski@carnegiescience.edu">jpiotrowski@carnegiescience.edu</a>
+            <div class="contact-content">
+                <p>Carnegie Observatories</p>
+                <p>813 Santa Barbara Street</p>
+                <p>Pasadena, CA 91101</p>
+                <a href="mailto:jpiotrowski@carnegiescience.edu" class="email-link">jpiotrowski@carnegiescience.edu</a>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Dr. John (Jack) Piotrowski</p>
+        <p>&copy; 2025 Dr. John (Jack) Piotrowski | Last Updated: August 31, 2025</p>
     </footer>
 </body>
 </html>
